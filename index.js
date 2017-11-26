@@ -37,7 +37,7 @@ export default class Select extends Component {
     super(props);
 
     this.state = {
-      value: null || 'Select an option',
+      value: props.defaultValue || 'Select an option',
       isVisible: false
     }
   }
@@ -101,8 +101,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     height: 45,
-    borderWidth: 1,
-    borderColor: '#929292',
+    zIndex: 1,
     paddingHorizontal: 16,
   }
 });
